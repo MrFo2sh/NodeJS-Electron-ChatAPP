@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Server</title>
+  </head>
+  <body>
+    <input type="text" id="portField" placeholder="Port">
+    <button id="startServer">Start Server</button>
+    <br>
+    <hr>
+    <p><b>Connected Users:</b></p>
+    <br>
+    <ul id="connectedUsers"></ul>
+    <br>
+    <hr>
+    <p><b>Users chat:</b></p>
+    <br>
+    <ul id="usersChat"></ul>
+    <br>
+    <hr>
+    <button id="stopServer">Stop server</button>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
